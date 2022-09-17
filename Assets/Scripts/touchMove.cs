@@ -17,7 +17,7 @@ public class touchMove : MonoBehaviour
             touch = Input.GetTouch(0);
             if (touch.phase == TouchPhase.Moved)
             {
-                transform.position = new Vector3(transform.position.x + touch.deltaPosition.x * 0.1f*Time.deltaTime, transform.position.y + touch.deltaPosition.y * 0.1f * Time.deltaTime, transform.position.z );
+                transform.position = new Vector3(transform.position.x + touch.deltaPosition.x *10f*(Time.deltaTime*Time.deltaTime), transform.position.y + touch.deltaPosition.y * 10f*(Time.deltaTime * Time.deltaTime), transform.position.z );
             }
         }
     }

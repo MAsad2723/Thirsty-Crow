@@ -23,7 +23,7 @@ public class movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(new Vector3(0, 0, 8f * Time.deltaTime));
+        transform.Translate(new Vector3(0, 0, 7f * Time.deltaTime));
         
                 // rb.AddForce(0, 0, 100 * Time.deltaTime);
         // float verticalMovement = Input.GetAxis("Vertical") * Time.deltaTime;
