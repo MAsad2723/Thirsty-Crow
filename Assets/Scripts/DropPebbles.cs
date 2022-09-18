@@ -18,6 +18,7 @@ public class DropPebbles : MonoBehaviour
             totalstone = GetComponent<Collectible>().NumberofPebbles;
             while(totalstone>0)
             {
+                new WaitForSeconds(3f);
                 Instantiate(obj);
                 Debug.Log("pebble dropped "+totalstone);
                 GetComponent<Collectible>().PebbleDecollected();
