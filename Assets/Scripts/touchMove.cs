@@ -10,14 +10,14 @@ public class touchMove : MonoBehaviour
     {
         speedModifier = 0.01f;
     }
-    void Update()
+    void FixedUpdate()
     {
         if (Input.touchCount > 0)
         {
             touch = Input.GetTouch(0);
             if (touch.phase == TouchPhase.Moved)
             {
-                transform.position = new Vector3(transform.position.x + touch.deltaPosition.x *6f*(Time.deltaTime*Time.deltaTime), transform.position.y + touch.deltaPosition.y * 6f*(Time.deltaTime * Time.deltaTime), transform.position.z );
+                transform.position = new Vector3(transform.position.x + touch.deltaPosition.x *4f*(Time.deltaTime*Time.deltaTime ), transform.position.y + touch.deltaPosition.y * 4f*(Time.deltaTime * Time.deltaTime), transform.position.z );
             }
         }
     }

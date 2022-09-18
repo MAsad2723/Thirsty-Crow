@@ -12,7 +12,7 @@ public class DropPebbles : MonoBehaviour
     public GameObject matka_filled;
     public void Update()
     {
-        if(crow.position.x >= 9.5 && crow.position.x <= 10 && crow.position.z >= 56 && crow.position.z <= 57)
+        if(crow.position.x >= 9 && crow.position.x <= 10 && crow.position.z >= 55 && crow.position.z <= 56)
         {
             move.enabled = false;
             totalstone = GetComponent<Collectible>().NumberofPebbles;
